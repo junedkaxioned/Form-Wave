@@ -102,18 +102,84 @@ li {
 }
 
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+.main-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #4682B4;
+  color: #fff;
+}
+
+.main-section .wrapper { width: 28%; }
+
+.login-form {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2A4E6C;
+}
+
+.heading {
+  padding: 30px 0px 10px;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.form-input {
+  width: 300px;
+  margin: 20px 0 40px;
+  position: relative;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 15px 0;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+}
+
+.form-input input:focus {
+  border-bottom-color: #ADD8E6;
+  transition: all 0.5s ease-in-out;
+}
+
+.placeholder {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  cursor: alias;
+  transition: all .5s ease-in-out;
+}
+
+.form-input input:focus + .placeholder{
+    color: #ADD8E6;
+    transform: translateY(-30px);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  display: inline-block;
+  background: #ADD8E6;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:active { transform: scale(0.98) }
+.sign { margin-top: 30px; }
+.sign a { color: #ADD8E6; }
 
 
 
